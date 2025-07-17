@@ -2,51 +2,30 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PLG eStore</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plg eStore</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <div class="logo">PLG eStore</div>
+    <h1>Bienvenue sur Plg eStore</h1>
     <nav>
       <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Catégories</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="netflix.html">Netflix</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Nos Offres Populaires</h1>
-    
-    <div class="product-slider">
-      <!-- ✅ Lien vers la page Netflix -->
-      <a href="netflix.html" class="product-card">
-        <img src="images/netflix.jpg" alt="Netflix" />
-        <h3>Netflix</h3>
-        <p>Abonnement premium</p>
-      </a>
-
-      <!-- D’autres produits -->
-      <div class="product-card">
-        <img src="images/prime.jpg" alt="Prime Video" />
-        <h3>Prime Video</h3>
-        <p>Films et séries exclusifs</p>
+    <section class="products">
+      <h2>Nos Produits</h2>
+      <div class="product-slide">
+        <div class="product-card">Produit 1</div>
+        <div class="product-card">Produit 2</div>
+        <div class="product-card">Produit 3</div>
       </div>
-
-      <div class="product-card">
-        <img src="images/spotify.jpg" alt="Spotify" />
-        <h3>Spotify</h3>
-        <p>Musique illimitée</p>
-      </div>
-    </div>
+    </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 PLG eStore - Tous droits réservés.</p>
-  </footer>
 </body>
 </html>
