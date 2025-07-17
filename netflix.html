@@ -2,25 +2,45 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Netflix - Plg eStore 🛒</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - Plg eStore</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Netflix - Abonnement Premium</h1>
-    <a href="index.html">← Retour à l'accueil</a>
+
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html">Plg eStore</a>
+    </div>
+    <nav class="top-nav">
+      <a href="index.html">Accueil</a>
+      <a href="#">Catégories</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="product-detail">
-      <img src="images/netflix.jpg" alt="Netflix Logo">
-      <div>
-        <h2>Abonnement Netflix</h2>
-        <p>Profite de Netflix Premium en toute simplicité via Plg eStore.</p>
-        <p><strong>Prix :</strong> 4 500 FCFA / mois</p>
-        <button>Ajouter au panier</button>
+  <main class="product-page">
+    <h1>Abonnement Netflix Premium</h1>
+    
+    <div class="product-container">
+      <img src="images/netflix.jpg" alt="Netflix Logo" class="product-image">
+      <div class="product-details">
+        <h2>Netflix - 1 mois</h2>
+        <p>Accédez à tout le catalogue Netflix en qualité HD avec un abonnement 100% fonctionnel. Activation rapide et assistance garantie !</p>
+        <p class="price">Prix : 4 500 FCFA</p>
+        <button class="add-to-cart">Ajouter au panier 🛒</button>
+        <button class="buy-now">Commander maintenant ⚡</button>
       </div>
-    </section>
+    </div>
+    
+    <div class="back-link">
+      <a href="index.html">← Retour à l'accueil</a>
+    </div>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Plg eStore. Tous droits réservés.</p>
+  </footer>
+
 </body>
 </html>
