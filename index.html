@@ -3,87 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Plg eStore 🛒</title>
+  <title>PLG eStore</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="logo">Plg eStore 🛒</div>
-    <div class="top-right">
-      <input type="text" placeholder="Rechercher..." class="search-bar" />
-      <div class="dots-menu">
-        <span></span><span></span><span></span>
-        <ul class="nav-menu">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#categories">Catégories</a></li>
-          <li><a href="#produits">Produits</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+    <div class="logo">PLG eStore</div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Catégories</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero" id="accueil">
-    <div class="hero-text">
-      <h1> Votre Hub Ngorie.</h1>
-      <p>Le meilleur choix pour vos abonnements et crédits !</p>
-      <a href="#produits" class="cta">Découvrir</a>
-    </div>
-  </section>
+  <main>
+    <h1>Nos Offres Populaires</h1>
+    
+    <div class="product-slider">
+      <!-- ✅ Lien vers la page Netflix -->
+      <a href="netflix.html" class="product-card">
+        <img src="images/netflix.jpg" alt="Netflix" />
+        <h3>Netflix</h3>
+        <p>Abonnement premium</p>
+      </a>
 
-  <section class="categories" id="categories">
-    <h2>Catégories</h2>
-    <div class="category-grid">
-      <div class="category">Netflix</div>
-      <div class="category">PlayStation</div>
-      <div class="category">Crunchyroll</div>
-      <div class="category">Free Fire</div>
-      <div class="category">Call of Duty</div>
-    </div>
-  </section>
+      <!-- D’autres produits -->
+      <div class="product-card">
+        <img src="images/prime.jpg" alt="Prime Video" />
+        <h3>Prime Video</h3>
+        <p>Films et séries exclusifs</p>
+      </div>
 
-  <section class="product-slider" id="produits">
-    <h2>Produits phares</h2>
-    <div class="slider">
       <div class="product-card">
-        <h3>Netflix 4K - 30 jours</h3>
-        <button onclick="addToCart('Netflix 4K')">Ajouter au panier</button>
-      </div>
-      <div class="product-card">
-        <h3>CP CODM Recharge</h3>
-        <button onclick="addToCart('CP CODM')">Ajouter au panier</button>
-      </div>
-      <div class="product-card">
-        <h3>PS Plus Essentiel</h3>
-        <button onclick="addToCart('PS Plus')">Ajouter au panier</button>
+        <img src="images/spotify.jpg" alt="Spotify" />
+        <h3>Spotify</h3>
+        <p>Musique illimitée</p>
       </div>
     </div>
-  </section>
-
-  <section class="panier">
-    <h2>Panier</h2>
-    <ul id="cart"></ul>
-    <button class="paiement">Commander</button>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email : plgstore241@gmail.com<br>WhatsApp : +241 065072731</p>
-  </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Plg eStore - Tous droits réservés</p>
+    <p>&copy; 2025 PLG eStore - Tous droits réservés.</p>
   </footer>
-
-  <script>
-    const cart = [];
-    function addToCart(product) {
-      cart.push(product);
-      const ul = document.getElementById("cart");
-      const li = document.createElement("li");
-      li.textContent = product;
-      ul.appendChild(li);
-    }
-  </script>
 </body>
 </html>
