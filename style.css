@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #f2f2f2;
+  scroll-behavior: smooth;
+  animation: fadeIn 1s ease-in;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.search-bar {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: white;
+}
+
+.dots-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.dots-menu span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #f2f2f2;
+  margin: 4px 0;
+  border-radius: 50%;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  list-style: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.dots-menu:hover .nav-menu {
+  display: block;
+}
+
+.nav-menu li {
+  margin: 0.3rem 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #c8102e;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #0a0a0a, #1e1e1e);
+  padding: 6rem 2rem;
+  text-align: center;
+  animation: slideDown 1s ease-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #f2f2f2;
+}
+
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.cta {
+  background: #c8102e;
+  padding: 0.7rem 2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: #e61e32;
+}
+
+.categories, .product-slider, .panier, .contact {
+  padding: 4rem 2rem;
+  animation: fadeInUp 0.8s ease;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.category:hover {
+  background: #c8102e;
+  color: white;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 14px;
+  width: 220px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #c8102e;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #e61e32;
+}
+
+.panier ul {
+  margin: 1rem 0;
+  list-style: inside;
+}
+
+.paiement {
+  background: #c8102e;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background: #1e1e1e;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
